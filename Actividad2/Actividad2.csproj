@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>recursos\basketball.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -93,6 +96,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos\13_heat.png" />
+    <Resource Include="recursos\14_heat.png" />
+    <Resource Include="recursos\14_lakers.png" />
+    <Resource Include="recursos\22_heat.png" />
+    <Resource Include="recursos\23_lakers.png" />
+    <Resource Include="recursos\39_lakers.png" />
+    <Resource Include="recursos\3_lakers.png" />
+    <Resource Include="recursos\7_heat.png" />
+    <Resource Include="recursos\99_heat.png" />
+    <Resource Include="recursos\9_lakers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="recursos\basketball.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,8 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="Equipos NBA" Height="450" Width="900"
+        Icon=".\recursos\basketball.ico">
+    <StackPanel>
+        <Border
+            Margin="10"
+            BorderBrush="Black"
+            BorderThickness="3"
+            CornerRadius="3">
+            <StackPanel>
+                <StackPanel.Background>
+                    <LinearGradientBrush
+                        EndPoint="0.5,1"
+                        StartPoint="0.5,0">
+                        <GradientStop
+                            Color="#FF7527FF"
+                            Offset="0" />
+                        <GradientStop
+                            Color="#FFFFFF21"
+                            Offset="1" />
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <TextBlock
+                    Text="Los Ángeles Lakers"
+                    FontSize="30"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Center"/>
+                <WrapPanel
+                    HorizontalAlignment="Center">
+                    <Image 
+                        Source=".\recursos\9_lakers.png"
+                        Stretch="fill"
+                        Height="120"
+                        Width="170"/>
+                    <Image
+                        Source=".\recursos\14_lakers.png"
+                        Stretch="fill"
+                        Height="120"
+                        Width="170" />
+                    <Image
+                        Source=".\recursos\23_lakers.png"
+                        Stretch="fill"
+                        Height="120"
+                        Width="170" />
+                    <Image
+                        Source=".\recursos\3_lakers.png"
+                        Stretch="fill"
+                        Height="120"
+                        Width="170" />
+                    <Image
+                        Source=".\recursos\39_lakers.png"
+                        Stretch="fill"
+                        Height="120"
+                        Width="170" />
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+    </StackPanel>
 </Window>
