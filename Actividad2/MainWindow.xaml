@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Actividad2"
         mc:Ignorable="d"
-        Title="Equipos NBA" Height="450" Width="900"
+        Title="Equipos NBA" Height="450" Width="950"
         Icon=".\recursos\basketball.ico">
     <StackPanel>
         <Border
@@ -55,6 +55,61 @@
                         Width="170" />
                     <Image
                         Source=".\recursos\39_lakers.png"
+                        Stretch="fill"
+                        Height="120"
+                        Width="170" />
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+
+        <Border
+            Margin="10"
+            BorderBrush="Black"
+            BorderThickness="3"
+            CornerRadius="3">
+            <StackPanel>
+                <StackPanel.Background>
+                    <LinearGradientBrush
+                        EndPoint="0.5,1"
+                        StartPoint="0.5,0">
+                        <GradientStop
+                            Color="Black"
+                            Offset="0" />
+                        <GradientStop
+                            Color="Red"
+                            Offset="1" />
+                    </LinearGradientBrush>
+                </StackPanel.Background>
+                <TextBlock
+                    Text="Miami Heat"
+                    Foreground="White"
+                    FontSize="30"
+                    FontWeight="Bold"
+                    HorizontalAlignment="Center" />
+                <WrapPanel
+                    HorizontalAlignment="Center">
+                    <Image
+                        Source=".\recursos\7_heat.png"
+                        Stretch="fill"
+                        Height="120"
+                        Width="170" />
+                    <Image
+                        Source=".\recursos\14_heat.png"
+                        Stretch="fill"
+                        Height="120"
+                        Width="170" />
+                    <Image
+                        Source=".\recursos\22_heat.png"
+                        Stretch="fill"
+                        Height="120"
+                        Width="170" />
+                    <Image
+                        Source=".\recursos\99_heat.png"
+                        Stretch="fill"
+                        Height="120"
+                        Width="170" />
+                    <Image
+                        Source=".\recursos\13_heat.png"
                         Stretch="fill"
                         Height="120"
                         Width="170" />
