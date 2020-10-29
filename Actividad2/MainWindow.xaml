@@ -30,33 +30,29 @@
                     Text="Los Ángeles Lakers"
                     FontSize="30"
                     FontWeight="Bold"
-                    HorizontalAlignment="Center"/>
+                    HorizontalAlignment="Center"
+                    TextWrapping="Wrap"/>
                 <WrapPanel
                     HorizontalAlignment="Center">
                     <Image 
                         Source=".\recursos\9_lakers.png"
                         Stretch="fill"
-                        Height="120"
                         Width="170"/>
                     <Image
                         Source=".\recursos\14_lakers.png"
                         Stretch="fill"
-                        Height="120"
                         Width="170" />
                     <Image
                         Source=".\recursos\23_lakers.png"
                         Stretch="fill"
-                        Height="120"
                         Width="170" />
                     <Image
                         Source=".\recursos\3_lakers.png"
                         Stretch="fill"
-                        Height="120"
                         Width="170" />
                     <Image
                         Source=".\recursos\39_lakers.png"
                         Stretch="fill"
-                        Height="120"
                         Width="170" />
                 </WrapPanel>
             </StackPanel>
@@ -85,33 +81,29 @@
                     Foreground="White"
                     FontSize="30"
                     FontWeight="Bold"
-                    HorizontalAlignment="Center" />
+                    HorizontalAlignment="Center"
+                    TextWrapping="Wrap"/>
                 <WrapPanel
                     HorizontalAlignment="Center">
                     <Image
                         Source=".\recursos\7_heat.png"
                         Stretch="fill"
-                        Height="120"
                         Width="170" />
                     <Image
                         Source=".\recursos\14_heat.png"
                         Stretch="fill"
-                        Height="120"
                         Width="170" />
                     <Image
                         Source=".\recursos\22_heat.png"
                         Stretch="fill"
-                        Height="120"
                         Width="170" />
                     <Image
                         Source=".\recursos\99_heat.png"
                         Stretch="fill"
-                        Height="120"
                         Width="170" />
                     <Image
                         Source=".\recursos\13_heat.png"
                         Stretch="fill"
-                        Height="120"
                         Width="170" />
                 </WrapPanel>
             </StackPanel>
