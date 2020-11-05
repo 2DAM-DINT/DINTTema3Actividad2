@@ -3,18 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Actividad2"
         mc:Ignorable="d"
         Title="Equipos NBA" Height="450" Width="950"
         Icon=".\recursos\basketball.ico">
-    <StackPanel>
-        <Border
-            Margin="10"
-            BorderBrush="Black"
-            BorderThickness="3"
-            CornerRadius="3">
-            <StackPanel>
-                <StackPanel.Background>
+
+    <Window.Resources>
+        <Style TargetType="{x:Type Border}">
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="BorderBrush" Value="Black"/>
+            <Setter Property="BorderThickness" Value="3"/>
+            <Setter Property="CornerRadius" Value="3"/>
+        </Style>
+
+        <Style TargetType="{x:Type StackPanel}" x:Key="lakers">
+            <Setter Property="Background">
+                <Setter.Value>
                     <LinearGradientBrush
                         EndPoint="0.5,1"
                         StartPoint="0.5,0">
@@ -25,46 +28,13 @@
                             Color="#FFFFFF21"
                             Offset="1" />
                     </LinearGradientBrush>
-                </StackPanel.Background>
-                <TextBlock
-                    Text="Los Ángeles Lakers"
-                    FontSize="30"
-                    FontWeight="Bold"
-                    HorizontalAlignment="Center"
-                    TextWrapping="Wrap"/>
-                <WrapPanel
-                    HorizontalAlignment="Center">
-                    <Image 
-                        Source=".\recursos\9_lakers.png"
-                        Stretch="fill"
-                        Width="170"/>
-                    <Image
-                        Source=".\recursos\14_lakers.png"
-                        Stretch="fill"
-                        Width="170" />
-                    <Image
-                        Source=".\recursos\23_lakers.png"
-                        Stretch="fill"
-                        Width="170" />
-                    <Image
-                        Source=".\recursos\3_lakers.png"
-                        Stretch="fill"
-                        Width="170" />
-                    <Image
-                        Source=".\recursos\39_lakers.png"
-                        Stretch="fill"
-                        Width="170" />
-                </WrapPanel>
-            </StackPanel>
-        </Border>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
-        <Border
-            Margin="10"
-            BorderBrush="Black"
-            BorderThickness="3"
-            CornerRadius="3">
-            <StackPanel>
-                <StackPanel.Background>
+        <Style TargetType="{x:Type StackPanel}" x:Key="heat">
+            <Setter Property="Background">
+                <Setter.Value>
                     <LinearGradientBrush
                         EndPoint="0.5,1"
                         StartPoint="0.5,0">
@@ -75,36 +45,51 @@
                             Color="Red"
                             Offset="1" />
                     </LinearGradientBrush>
-                </StackPanel.Background>
-                <TextBlock
-                    Text="Miami Heat"
-                    Foreground="White"
-                    FontSize="30"
-                    FontWeight="Bold"
-                    HorizontalAlignment="Center"
-                    TextWrapping="Wrap"/>
-                <WrapPanel
-                    HorizontalAlignment="Center">
-                    <Image
-                        Source=".\recursos\7_heat.png"
-                        Stretch="fill"
-                        Width="170" />
-                    <Image
-                        Source=".\recursos\14_heat.png"
-                        Stretch="fill"
-                        Width="170" />
-                    <Image
-                        Source=".\recursos\22_heat.png"
-                        Stretch="fill"
-                        Width="170" />
-                    <Image
-                        Source=".\recursos\99_heat.png"
-                        Stretch="fill"
-                        Width="170" />
-                    <Image
-                        Source=".\recursos\13_heat.png"
-                        Stretch="fill"
-                        Width="170" />
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="{x:Type TextBlock}">
+            <Setter Property="FontSize" Value="30"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+        </Style>
+
+        <Style TargetType="{x:Type WrapPanel}">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+
+        <Style TargetType="{x:Type Image}">
+            <Setter Property="Width" Value="170"/>
+            <Setter Property="Stretch" Value="Fill"/>
+        </Style>
+    </Window.Resources>
+    
+    <StackPanel>
+        <Border>
+            <StackPanel Style="{StaticResource lakers}">
+                <TextBlock Text="Los Ángeles Lakers" />
+                <WrapPanel>
+                    <Image Source=".\recursos\9_lakers.png" />
+                    <Image Source=".\recursos\14_lakers.png" />
+                    <Image Source=".\recursos\23_lakers.png" />
+                    <Image Source=".\recursos\3_lakers.png" />
+                    <Image Source=".\recursos\39_lakers.png" />
+                </WrapPanel>
+            </StackPanel>
+        </Border>
+
+        <Border>
+            <StackPanel Style="{StaticResource heat}">
+                <TextBlock Text="Miami Heat"
+                           Foreground="White"/>
+                <WrapPanel>
+                    <Image Source=".\recursos\7_heat.png" />
+                    <Image Source=".\recursos\14_heat.png" />
+                    <Image Source=".\recursos\22_heat.png" />
+                    <Image Source=".\recursos\99_heat.png" />
+                    <Image Source=".\recursos\13_heat.png" />
                 </WrapPanel>
             </StackPanel>
         </Border>
