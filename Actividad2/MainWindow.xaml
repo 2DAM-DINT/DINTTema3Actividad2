@@ -8,7 +8,7 @@
         Icon=".\recursos\basketball.ico">
 
     <Window.Resources>
-        <Style TargetType="{x:Type Border}">
+        <Style TargetType="{x:Type Border}" x:Key="borde">
             <Setter Property="Margin" Value="10"/>
             <Setter Property="BorderBrush" Value="Black"/>
             <Setter Property="BorderThickness" Value="3"/>
@@ -67,7 +67,7 @@
     </Window.Resources>
     
     <StackPanel>
-        <Border>
+        <Border Style="{StaticResource borde}">
             <StackPanel Style="{StaticResource lakers}">
                 <TextBlock Text="Los Ángeles Lakers" />
                 <WrapPanel>
@@ -80,7 +80,7 @@
             </StackPanel>
         </Border>
 
-        <Border>
+        <Border Style="{StaticResource borde}">
             <StackPanel Style="{StaticResource heat}">
                 <TextBlock Text="Miami Heat"
                            Foreground="White"/>
